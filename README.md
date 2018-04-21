@@ -3,6 +3,7 @@
 ### 目录结构：
 * images  图片资源
 * pages  页面文件夹
+*  award   推荐奖励
 ##  项目截图：
 ### 主界面
 ![主界面](https://github.com/best-fan/wechat-app-zp/blob/master/screen/1.png)
