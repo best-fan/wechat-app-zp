@@ -1,0 +1,15 @@
+<!--pages/award/award.wxml-->
+<view class="award">
+  <view class="award-image">
+    <image src="../../images/topimage.png"/>
+  </view>
+  <view class="award-list">
+    <view class="award-list-name">
+      <view class="name-text">姓名：</view>
+      <input class="name-input" type="text" placeholder="请输入推荐人姓名" bindinput ="recoNameInput" name="recoName"/>
+    </view>
+  </view>
+  <view class="text-one">第一步：提交推荐人姓名</view>
+  <view class="text-tow">第二步：推荐人信息查询：个人中心---我的推荐</view>
+  <view class="award-btn" bindtap='put_infor'>确定</view>
+</view>

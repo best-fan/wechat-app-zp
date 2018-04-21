@@ -1,0 +1,43 @@
+<!--pages/index/detail.wxml-->
+<view class="detail">
+  <view class="det-image">
+    <image src="{{content.detSrc}}"/>
+  </view>
+  <view class="det-list">
+    <view class='det-list-one'>{{content.detName}}</view>
+    <view class='det-list-tow'>
+      <view class='det-list-tow-one' wx:if="{{content.payType==0}}">{{content.detPayMin}}-{{content.detPayMax}}元/月</view>
+      <view class='det-list-tow-one' wx:else>{{content.detPayMax}}元/小时</view>
+      <view class='det-list-tow-tow'>已报名{{content.entNum}}人</view>
+    </view>
+    <view class='det-list-three'>{{content.detAddr}}</view>
+  </view>
+  <view class="det-money"><view>薪资说明</view></view>
+  <view class="det-money-list">
+          <rich-text nodes="{{content.payDescription}}"></rich-text>
+  </view>
+  <view class="det-money"><view>食宿说明</view></view>
+  <view class="det-money-list">
+          <rich-text nodes="{{content.boardDescription}}"></rich-text>
+  </view>
+  <view class="det-money"><view>招聘要求</view></view>
+  <view class="det-money-list">
+          <rich-text nodes="{{content.recruitDescription}}"></rich-text>
+  </view>
+  <view class="det-money"><view>温馨提示</view></view>
+  <view class="det-money-list">
+          <rich-text nodes="{{content.kindlyReminder}}"></rich-text>  
+  </view>
+  <view class="det-money"><view>公司介绍</view></view>
+  <view class="det-money-list det-money-list-text">
+    <rich-text nodes="{{content.detCompany}}"></rich-text>
+  </view>
+  <view class="det-nav">
+    <ul>
+      <li style="background-color:#3bae56;" ><button class="conbtn" open-type="contact">微信咨询</button></li>
+      <li style="background-color:#56abe4;" bindtap="bindViewServicePhone">电话咨询</li>
+      <li style="background-color:#f0ad4e;" bindtap="bindViewIndex">返回首页</li>
+      <li style="background-color:#eb4f38;" bindtap="bindViewPutinfor">马上报名</li>
+    </ul>
+  </view>
+</view>

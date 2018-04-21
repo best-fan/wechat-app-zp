@@ -1,0 +1,61 @@
+<!--pages/personal/personal.wxml-->
+<view class="personal">
+  <view class="personal-top">
+  
+<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+    <view class="personal-top-image">
+      <image src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    </view>
+    <view class="personal-top-text">{{username}}</view>
+</block>
+
+  </view>
+  <view class="personal-middle">
+    <view class="per-mid-list1" bindtap='bindViewMyJoin'>
+      <view class="per-mid-list1-left per-mid-list-left">
+        <image src="../../images/mybaoming.png"/>
+        <view class="per-mid-list1-left-text per-mid-list-left-text">我的报名</view>
+      </view>
+      <view class="per-mid-list1-right per-mid-list-right">
+        <image src="../../images/jiantou.png"/>
+      </view>
+    </view>
+    <view class="per-mid-list2"bindtap='bindViewMyaward'>
+      <view class="per-mid-list2-left per-mid-list-left">
+        <image src="../../images/mytuijian.png"/>
+        <view class="per-mid-list2-left-text per-mid-list-left-text">我的推荐</view>
+      </view>
+      <view class="per-mid-list2-right per-mid-list-right">
+        <image src="../../images/jiantou.png"/>
+      </view>
+    </view>
+    <view class="per-mid-list3" bindtap='bindViewTodayGxz'>
+      <view class="per-mid-list3-left per-mid-list-left">
+        <image src="../../images/shezhi.png"/>
+        <view class="per-mid-list3-left-text per-mid-list-left-text">修改信息</view>
+      </view>
+      <view class="per-mid-list3-right per-mid-list-right">
+        <image src="../../images/jiantou.png"/>
+      </view>
+    </view>
+    <view class="per-mid-list4" bindtap='bindViewServicePhone'>
+      <view class="per-mid-list4-left per-mid-list-left">
+        <image src="../../images/mykefu.png"/>
+        <view class="per-mid-list4-left-text per-mid-list-left-text">我的客服</view>
+      </view>
+      <view class="per-mid-list4-right per-mid-list-right">
+        <image src="../../images/jiantou.png"/>
+      </view>
+    </view>
+    <view class="per-mid-list5" bindtap='bindViewMap'>
+      <view class="per-mid-list5-left per-mid-list-left">
+        <image src="../../images/mydizhi.png"/>
+        <view class="per-mid-list5-left-text per-mid-list-left-text">门店地址</view>
+      </view>
+      <view class="per-mid-list5-right per-mid-list-right">
+        <image src="../../images/jiantou.png"/>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,23 @@
+<!--pages/setinfor/setinfor.wxml-->
+<view class="login">
+  <view class="login-top">
+    <view class="login-top-image">
+      <image src="{{userInfo.avatarUrl}}"/>
+    </view>
+    <view class="login-top-text">请认真填写要修改的信息</view>
+  </view>
+  <view class="login-middle">
+    <view class="log-mid-list1">
+      <image src='../../images/loginme.png'/>
+      <input type='text' placeholder='请输入您的姓名' name="userName" disabled="disabled" bindinput ="userNameInput"  value="{{username}}" />
+    </view>
+    <view class="log-mid-list2">
+        <image src='../../images/loginphone.png'/>
+        <input type='text' placeholder='请输入手机号码' maxlength="11"  name="userPhone" bindinput ="phoneInput" value="{{userphone}}" />
+    </view>
+  </view>
+  <view class="login-bottom" bindtap='bindViewPut' >提交</view>
+  <view class="text-one">注意事项：</view>
+  <view class="text-tow">1、如需修改用户名，请微信联系客服</view>
+  <view class="text-three">2、一个手机号只能注册一个账号，请认真填写</view>
+</view>

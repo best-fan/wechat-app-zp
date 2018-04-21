@@ -1,0 +1,97 @@
+/* pages/myjoin/myjoin.wxss */
+.username{
+  height:240rpx;
+  line-height: 240rpx;
+  text-align: center;
+  color: #888;
+}
+.tishi{
+  text-align:center;
+margin-top:-20px;
+margin-bottom:39px;
+color:red;
+font-size:14px;
+
+}
+/********招聘公司列表*********/ 
+.list-all{
+  width: 100%;
+  height: 150rpx;
+  box-shadow: 0px 0px 3px rgba(55,55,55,0.5);
+}
+.detail-list{
+  margin-top: 10px;
+  width:80%;
+  height:100%;
+}
+.detail-list view{
+  float: left;
+}
+.list-image{
+  margin-left: 8px;
+  width:20%;
+  height:77%;
+  margin-top: 2.7%;
+}
+.list-image image{
+  border-radius:5px;
+  width:100%;
+  height:100%;
+}
+.list-text{
+  height:100%;
+  width:75%;
+}
+.list-text-other{
+  height:100%;
+  width:100%;
+  text-align:center;
+  margin-top:102px;
+  color:#919191;
+
+
+}
+.list-text text{
+  -webkit-text-size-adjust:none;
+  height:45rpx;
+  line-height:53rpx;
+  font-size:17px;
+  float:left;
+  width:97%;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+.list-text-name{
+  padding-left:8px;
+  margin-top:5px;
+  color:#000;
+}
+.checkbox{
+  line-height: 150rpx;
+  width: 20%;
+  float: right;
+  height: 100%;
+  margin-top: -150rpx;
+}
+.checkbox checkbox{
+  float: right;
+  margin-right: 10%;
+}
+.content{
+  height: 100%;
+  width: 100%;
+  margin-bottom: 150rpx;
+}
+.delete{
+  line-height: 120rpx;
+  text-align: center;
+  width: 100%;
+  height: 120rpx;
+  color: #fff;
+  background-color: red;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+

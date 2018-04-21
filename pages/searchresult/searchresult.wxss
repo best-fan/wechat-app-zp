@@ -1,0 +1,106 @@
+/* pages/searchinfor/searchresult.wxss */
+.detail-list{
+  margin-top: 10px;
+  width:100%;
+  height:220rpx;
+  box-shadow: 0px 0px 3px rgba(55,55,55,0.5);
+}
+.detail-list view{
+  float: left;
+}
+.list-image{
+  margin-left: 8px;
+  width:22%;
+  height:77%;
+  margin-top: 3%;
+}
+.list-image image{
+  width:100%;
+  height:100%;
+  border-radius:5px;
+}
+
+.list-text{
+  height:100%;
+  width:75%;
+}
+.list-text view{
+  height:33px;
+  line-height:33px;
+}
+.list-text-name{
+  height: 45rpx;
+  line-height: 45rpx;
+  width:93%;
+  padding-left:8px;
+  margin-top:7px;
+}
+.list-text-name-one{
+  text-align: left;
+  float: left;
+  height: 45rpx;
+  line-height: 45rpx;
+  width:70%;
+  color:#000;
+  font-size:15px;
+  font-weight:700;
+}
+.list-text-entnum{
+  float: right;
+  width:30%;
+  height: 45rpx;
+  line-height: 45rpx;
+  font-size: 14px;
+  text-align:right;
+  color:#888;
+}
+.list-text-detpay{
+  height: 21px;
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 97%;
+}
+.list-text-detpay-one{
+  float: right;
+  height: 100%;
+  width: 60%;
+  text-align:right;
+  color:red;
+  font-weight:600;
+  font-size:14px;
+  line-height: 21px;
+}
+.list-text-adder{
+  height: 100%;
+  float: left;
+  width: 35%;
+  text-align:left;
+  color:#888;
+  font-size:14px;
+  line-height: 21px;
+}
+.list-text-time{
+  padding-left: 8px;
+  height: 45rpx;
+  line-height: 45rpx;
+  font-size: 14px;
+  float: left;
+  width:95%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:left;
+  color:#888;
+}
+/*
+暂无招聘
+*/
+.infor-text{
+  margin-top: 150px;
+  width: 100%;
+  text-align:center;
+  color: #888888;
+
+}
+
+

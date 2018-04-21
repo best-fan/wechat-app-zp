@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/detail/detail",
+    "pages/today/today",
+    "pages/award/award",
+    "pages/servicephone/servicephone",
+    "pages/personal/personal",
+    "pages/register/register",
+    "pages/searchresult/searchresult",
+    "pages/map/map",
+    "pages/setinfor/setinfor",
+    "pages/myjoin/myjoin",
+    "pages/myaward/myaward"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fc3",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "濮阳打工信息网",
+    "backgroundTextStyle": "light",
+    "onReachBottom": true
+  },
+  "tabBar": {
+    "color": "#959595",
+    "selectedColor": "#000",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/index_p.png",
+        "iconPath": "images/index.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/today_p.png",
+        "iconPath": "images/today.png",
+        "pagePath": "pages/today/today",
+        "text": "今日招聘"
+      },
+      {
+        "selectedIconPath": "images/money_p.png",
+        "iconPath": "images/money.png",
+        "pagePath": "pages/award/award",
+        "text": "推荐奖励"
+      },
+      {
+        "selectedIconPath": "images/me_p.png",
+        "iconPath": "images/me.png",
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心"
+      }
+    ]
+  }
+}

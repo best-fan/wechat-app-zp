@@ -1,0 +1,21 @@
+<!--pages/myaward/myaward.wxml-->
+<!--pages/myjoin/myjoin.wxml-->
+    <view  class='list-text-other' wx:if="{{num==0}}"> 
+                             <text>暂未被推荐人</text> </view> 
+  <view class='delete'   wx:else>
+<view class='username'>推荐人: {{username}} </view>
+</view> 
+<view class='content'>
+     <block wx:for="{{infor}}" wx:key="2*this">
+    <view class='list-all'>
+      <view class="detail-list"  data-index="{{index}}">
+          <view class="list-text">
+           <text class='list-text-name'>姓名：{{item.userName}} 手机号：{{item.userPhone}}</text>
+          </view>  
+      </view>
+    </view>
+    </block>
+
+               
+</view>
+

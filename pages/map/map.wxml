@@ -1,0 +1,2 @@
+<!-- map.wxml -->
+<!-- <button class="button" bindtap="getlocation" style="margin-top:30px" markers="{{markers}}">定位</button>  -->

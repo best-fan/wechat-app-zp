@@ -1,0 +1,134 @@
+<!--index.wxml-->
+<view class="weui-search-bar">
+  <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input"  disabled='true' placeholder="搜索工作：如上海、深圳、昆山" bindtap="wxSearchTab"/>
+    </view>
+  </view>
+</view>
+ <view>{{searchValue}}</view> 
+
+<!--轮播图-->
+<view class="swiper-container">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{duration}}" current="{{swiperCurrent}}" bindchange="swiperChange" class="swiper">
+    <block wx:for="{{imgUrls}}" wx:key="3*this">
+      <swiper-item>
+        <image src="{{item.swiperImgSrc}}" class="img" bindtap="swipclick" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--导航-->
+   <view class="nav">
+    <view class="nav-up">
+      <view class="nav-one-up nav-all" bindtap='bindViewToday'>
+        <view class="nav-one-up-img nav-all-img">
+          <image src="../../images/zwgw.png" />
+        </view>
+        <view class="nav-text" >
+          <text style="font-weight:600;">全部职位</text>
+        </view>
+      </view>
+      <view class="nav-tow-up nav-all" bindtap='bindViewTodayGxz' >
+        <view class="nav-tow-up-img nav-all-img">
+          <image src="../../images/bt.png"/>
+        </view>
+        <view class="nav-text">
+          <text style="font-weight:600;">高薪资</text>
+        </view>
+      </view>
+      <view class="nav-three-up nav-all" bindtap='bindViewTodayLsg' >
+        <view class="nav-three-up-img nav-all-img">
+          <image src="../../images/xz.png"/>
+        </view>
+        <view class="nav-text">        
+          <text style="font-weight:600;">临时工</text>
+        </view>        
+      </view>
+      <view class="nav-four-up nav-all" bindtap='bindViewTodayTj'>
+        <view class="nav-four-up-img nav-all-img">
+          <image src="../../images/sgry.png"/>
+        </view>
+        <view class="nav-text">
+          <text style="font-weight:600;">推荐</text>
+        </view>
+      </view>
+    </view>
+    <view class="nav-down">
+      <view class="nav-one-down nav-all">
+        <button class="nav-one-down nav-all" style="font-weight:600;" class="conbtn" open-type="contact">
+          <view class="nav-one-down-img nav-all-img">
+            <image style="margin-right:auto;margin-left:auto;" src="../../images/wx.png"/>
+          </view>
+          <view style="line-height:17px;font-weight:600;" class="nav-text">
+            微信咨询
+          </view>
+        </button>
+      </view>
+      <view class="nav-tow-down nav-all" bindtap="bindViewServicePhone">
+        <view class="nav-tow-down-img nav-all-img">
+          <image src="../../images/kfrx.png"/>
+        </view>
+        <view class="nav-text">
+          <text style="font-weight:600;">求职热线</text>
+        </view>
+      </view>
+      <view class="nav-three-down nav-all"  bindtap="bindViewAward">
+        <view class="nav-three-down-img nav-all-img">
+          <image src="../../images/jl.png"/>
+        </view>
+        <view class="nav-text">
+          <text style="font-weight:600;">推荐奖励</text>
+        </view>
+      </view>
+      <view class="nav-four-down nav-all" bindtap="bindViewLoaction">
+        <view class="nav-four-down-img nav-all-img">
+          <image src="../../images/dh.png"/>
+        </view>
+        <view class="nav-text">
+          <text style="font-weight:600;">门店导航</text>
+        </view>
+      </view>
+    </view>
+  </view>
+<!--滚动tab-->
+<view >
+    <scroll-view scroll-y="true" scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+        <view class="tab-item {{currentTab==0?'active':''}}"  data-current="0" bindtap="swichNav">全部职位</view>
+        <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">高薪资</view>
+        <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">临时工</view>
+        <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">推荐</view>
+    </scroll-view>
+    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx">
+        <swiper-item wx:for="{{[0,1,2,3]}}"wx:key="1*this"  >
+            <scroll-view bindscrolltolower="scrolltolower" scroll-y="true" class="scoll-h" >
+                <block wx:for="{{detailInfo}}" wx:key="2*this">
+                  <view class="detail-list" bindtap="showDetail" data-index="{{index}}">
+                    <view class="list-image">
+                      <image src="{{item.detSrc}}"/>
+                    </view>
+                    <view class="list-text">
+                      <view class='list-text-name'>
+                        <text class='list-text-name-one'>{{item.detName}}</text>
+                        <text class='list-text-entnum'>已报名{{item.entNum}}人</text>
+                      </view>
+                      <view  class='list-text-detpay' wx:if="{{item.payType==0}}"> 
+                         <view class='list-text-adder' >{{item.detAddr}}</view> 
+                         <view class='list-text-detpay-one'>{{item.detPayMin}}-{{item.detPayMax}}元/月</view> 
+                      </view> 
+                      <view class='list-text-detpay' wx:else>
+                         
+                         <view class='list-text-adder' >{{item.detAddr}}</view> 
+                         <view class='list-text-detpay-one'>{{item.detPayMax}}元/小时</view> 
+                      </view>
+                      <!-- <text class='list-text-time' >{{item.updatedAt}}</text> -->
+                    </view>
+                  </view>                  
+                </block>
+                <view class="loading">{{loadingTip}}</view>
+            </scroll-view> 
+        </swiper-item>
+    </swiper>
+</view>
+

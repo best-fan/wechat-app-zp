@@ -1,0 +1,24 @@
+<!--pages/login/login.wxml-->
+<view class="login">
+  <view class="login-top">
+    <view class="login-top-image">
+      <image src="{{userInfo.avatarUrl}}"/>
+    </view>
+    <view class="login-top-text">绑定手机号码即可成为会员</view>
+  </view>
+  <view class="login-middle">
+    <view class="log-mid-list1">
+      <image src='../../images/loginme.png'/>
+      <input type='text' placeholder='请输入您的姓名' bindinput ="userNameInput" name="userName"/>
+    </view>
+    <view class="log-mid-list2">
+      <!-- <view class="log-mid-list2-one"> -->
+        <image src='../../images/loginphone.png'/>
+        <input type='text' bindinput="passWdInput"  placeholder='请输入手机号码' name="userPhone"/>
+      </view> 
+  </view>
+  <view class="login-bottom-put" bindtap='put_infor' >提交</view>
+  <view class="login-bottom-back" bindtap='goBackIndex' >返回</view>
+    <view class="text-one">注意事项：</view>
+  <view class="text-tow">1、姓名填写后将无法修改，请认真填写</view>
+</view>

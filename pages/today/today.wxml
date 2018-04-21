@@ -1,0 +1,51 @@
+<!--index.wxml-->
+<view class="weui-search-bar">
+  <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input"  disabled='true' placeholder="搜索工作：如上海、深圳、昆山" bindtap="wxSearchTab"/>
+    </view>
+  </view>
+</view>
+<view>{{ searchValue}}</view>
+<!--滚动tab-->
+<!--滚动tab-->
+<view >
+    <scroll-view scroll-y="true" scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+        <view class="tab-item {{currentTab==0?'active':''}}"  data-current="0" bindtap="swichNav">全部职位</view>
+        <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">高薪资</view>
+        <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">临时工</view>
+        <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">推荐</view>
+    </scroll-view>
+    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx">
+        <swiper-item wx:for="{{[0,1,2,3]}}"wx:key="1*this" >
+            <scroll-view bindscrolltolower="scrolltolower" scroll-y="true"    class="scoll-h" >
+                <block wx:for="{{detailInfo}}" wx:key="2*this">
+                  <view class="detail-list" bindtap="showDetail" data-index="{{index}}">
+                    <view class="list-image">
+                        <image src="{{item.detSrc}}"/>
+                    </view>
+                    <view class="list-text">
+                      <view class='list-text-name'>
+                        <text class='list-text-name-one'>{{item.detName}}</text>
+                        <text class='list-text-entnum'>已报名{{item.entNum}}人</text>
+                      </view>
+                      <view  class='list-text-detpay' wx:if="{{item.payType==0}}"> 
+                         <view class='list-text-adder' >{{item.detAddr}}</view> 
+                         <view class='list-text-detpay-one'>{{item.detPayMin}}-{{item.detPayMax}}元/月</view> 
+                      </view> 
+                      <view class='list-text-detpay' wx:else>
+                         
+                         <view class='list-text-adder' >{{item.detAddr}}</view> 
+                         <view class='list-text-detpay-one'>{{item.detPayMax}}元/小时</view> 
+                      </view>
+                      <!-- <text class='list-text-time' >2018-03-14</text> -->
+                    </view>
+                  </view>                  
+                </block>
+                <view class="loading">{{loadingTip}}</view>
+            </scroll-view>
+            
+        </swiper-item>
+    </swiper>
+</view>

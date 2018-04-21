@@ -1,0 +1,33 @@
+<!--pages/searchinfor/searchresult.wxml-->
+<view  class='infor-text'wx:if="{{isnull==0}}"> 
+  <view ><text>暂无招聘信息</text></view>
+    <text >请更换城市搜索</text> 
+</view> 
+<view wx:else>
+            <scroll-view bindscrolltolower="scrolltolower" scroll-y="true" class="scoll-h" >
+                <block wx:for="{{detailInfo}}" wx:key="*this">
+                  <view class="detail-list" bindtap="showDetail" data-index="{{index}}">
+                    <view class="list-image">
+                       <image src="{{item.detSrc}}"/>
+                    </view>
+                    <view class="list-text">
+                      <view class='list-text-name'>
+                        <text class='list-text-name-one'>{{item.detName}}</text>
+                        <text class='list-text-entnum'>已报名{{item.entNum}}人</text>
+                      </view>
+                      <view  class='list-text-detpay' wx:if="{{item.payType==0}}"> 
+                         <view class='list-text-adder' >{{item.detAddr}}</view> 
+                         <view class='list-text-detpay-one'>{{item.detPayMin}}-{{item.detPayMax}}元/月</view> 
+                      </view> 
+                      <view class='list-text-detpay' wx:else>
+                         
+                         <view class='list-text-adder' >{{item.detAddr}}</view> 
+                         <view class='list-text-detpay-one'>{{item.detPayMax}}元/小时</view> 
+                      </view>
+                      <text class='list-text-time' >2018-03-14</text>
+                    </view>
+                  </view>                  
+                </block>
+                <view class="loading">{{loadingTip}}</view>
+            </scroll-view>
+</view>

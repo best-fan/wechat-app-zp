@@ -1,0 +1,27 @@
+<!--pages/servicephone/servicephone.wxml-->
+<view class="servicephone">
+  <view class="sp-one">
+    <view class="number">{{phoneNameOne}}</view>
+    <view class="number-image" bindtap='bindMakePhoneOne'>
+      <image src="../../images/servicephone.png"/>
+    </view>
+  </view>
+  <view class="sp-one">
+    <view class="number">{{phoneNameTwo}}</view>
+    <view class="number-image" bindtap='bindMakePhoneTwo'>
+      <image src="../../images/servicephone.png"/>
+    </view>
+  </view>
+  <view class="sp-one">
+    <view class="number">{{phoneNameThree}}</view>
+    <view class="number-image" bindtap='bindMakePhoneThree'>
+      <image src="../../images/servicephone.png"/>
+    </view>
+  </view>
+  <view class="sp-one">
+    <view class="number">{{phoneNameFour}}</view>
+    <view class="number-image" bindtap='bindMakePhoneFour'>
+      <image src="../../images/servicephone.png"/>
+    </view>
+  </view>
+</view>

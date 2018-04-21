@@ -1,0 +1,38 @@
+/* pages/servicephone/servicephone.wxss */
+.servicephone{
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+.sp-one{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width:90%;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px #e5e5e5 solid;
+}
+.number{
+  border: 1px #fc3 solid;
+  float: left;
+  text-align: center;
+  line-height: 100rpx;
+  height: 100rpx;
+  width: 68%;
+}
+.number-image{
+  height:100%;
+  line-height: 100%;
+  width:29%;
+  float: right;
+  box-shadow: 0px 0px 3px rgba(55,55,55,0.5);
+  border-radius: 10rpx;
+  border: 1px #fc3 solid;
+}
+.number-image image{
+  height: 100%;
+  width: 100%;
+}

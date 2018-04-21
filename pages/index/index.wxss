@@ -1,0 +1,229 @@
+
+/**index.wxss**/
+@import "../../wxSearchView/wxSearchView.wxss";
+.container{
+  padding:0;
+  margin: 0;
+}
+.weui-search-bar,.weui-search-bar__form,.weui-search-bar__box,.weui-search-bar__input{
+  width:100%;
+}
+.weui-search-bar{
+  border: 0rpx;
+  margin-top: 0rpx;
+}
+/*******导航*****/
+/********要改的开始*********/
+.nav{
+  background-color: #fff;
+  margin-top: 7px;
+  box-shadow: 0px 0px 3px rgba(55,55,55,0.5);
+  width:100%;
+  height:400rpx;
+  padding: 0px;
+}
+.nav-up{
+  margin: 0px;
+  padding: 0px;
+  width:100%;
+  height:190rpx;
+}
+.nav-down{
+  margin: 0px;
+  padding: 0px;
+  width:100%;
+  height:190rpx;
+}
+.nav-all{
+  overflow: hidden;
+  float:left;
+  height:100%;
+  width:25%;
+}
+
+.nav-all-img{
+  width:100%;
+  height:180rpx;
+}
+.nav-all-img image{
+  width: 110rpx;
+  height:110rpx;
+  border-radius: 55rpx;
+  margin-top: 25rpx;
+  margin-left: 42rpx;
+}
+.nav-one-up-img image{
+  background-color: #f96;
+}
+.nav-tow-up-img image{
+  background-color: #39f;
+}
+.nav-three-up-img image{
+  background-color: #9f3;
+}
+.nav-four-up-img image{
+  background-color: #f69;
+}
+.nav-one-down-img image{
+  background-color: #6c3;
+}
+.nav-tow-down-img image{
+  background-color: #96f;
+}
+.nav-three-down-img image{
+  background-color: #fc3;
+}
+.nav-four-down-img image{
+  background-color: #6cf;
+}
+.nav-text{
+  color: #000;
+  font-size: 13px;
+   padding: 0px;
+  margin-top:-30rpx;
+  text-align: center;
+  width:100%;
+  height:40rpx;
+}
+/********招聘公司列表*********/ 
+.detail-list{
+  margin-top: 10px;
+  width:100%;
+  height:220rpx;
+  box-shadow: 0px 0px 3px rgba(55,55,55,0.5);
+}
+.detail-list view{
+  float: left;
+}
+.list-image{
+  margin-left: 8px;
+  width:22%;
+  height:77%;
+  margin-top: 3%;
+}
+.list-image image{
+  width:100%;
+  height:100%;
+  border-radius:5px;
+}
+/* .list-image image{
+  border: 1px solid #13227a;
+  width:100%;
+  height:100%;
+} */
+.list-text{
+  height:100%;
+  width:75%;
+}
+.list-text view{
+  height:33px;
+  line-height:33px;
+}
+.list-text-name{
+  height: 45rpx;
+  line-height: 45rpx;
+  width:93%;
+  padding-left:8px;
+  margin-top:7px;
+}
+.list-text-name-one{
+  text-align: left;
+  float: left;
+  height: 45rpx;
+  line-height: 45rpx;
+  width:70%;
+  color:#000;
+  font-size:15px;
+  font-weight:700;
+}
+.list-text-entnum{
+  float: right;
+  width:30%;
+  height: 45rpx;
+  line-height: 45rpx;
+  font-size: 14px;
+  text-align:right;
+  color:#888;
+}
+.list-text-detpay{
+  height: 21px;
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 97%;
+}
+.list-text-detpay-one{
+  float: right;
+  height: 100%;
+  width: 60%;
+  text-align:right;
+  color:red;
+  font-weight:600;
+  font-size:14px;
+  line-height: 21px;
+}
+.list-text-adder{
+  height: 100%;
+  float: left;
+  width: 35%;
+  text-align:left;
+  color:#888;
+  font-size:14px;
+  line-height: 21px;
+}
+.list-text-time{
+  padding-left: 8px;
+  height: 45rpx;
+  line-height: 45rpx;
+  font-size: 14px;
+  float: left;
+  width:95%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:left;
+  color:#888;
+}
+/*轮播图*/
+swiper {
+    height: 500rpx;
+}
+swiper-item image {
+    width: 100%;
+    height: 100%;
+}
+.swiper-container{
+  position: relative;
+}
+.swiper-container .swiper{
+  height: 380rpx;
+}
+.swiper-container .swiper .img{
+  width: 100%;
+  height: 100%;
+}
+.loading{
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: #888;
+  font-size: 15px;
+  border-top: 1px #F7F7F7 solid;
+  border-bottom: 1px #F7F7F7 solid;
+}
+/*滚动tab*/
+.tab-h{
+    height: 80rpx;width: 100%; box-sizing: border-box;margin-left: auto;margin-right: auto;margin-top: 0;
+    line-height: 80rpx;background: #fff; font-size: 16px; white-space: nowrap;top:0; left: 0; z-index: 99;}
+.tab-item{margin:0;display: inline-block;width: 25%;text-align: center;}
+.tab-item.active{position: relative;background: #fc3;}
+.tab-content{margin-top: 3rpx;height:1000rpx;}
+.scoll-h{height: 100%;margin: 0;}
+
+.conbtn{
+background-color:#fff;
+} 
+button::after{
+border: none;
+}
+

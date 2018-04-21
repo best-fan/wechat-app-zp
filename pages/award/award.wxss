@@ -1,0 +1,71 @@
+/* pages/award/award.wxss */
+.award{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.award-image{
+  width:100%;
+  height:360rpx;
+}
+.award-image image{
+  width:100%;
+  height:100%;
+}
+.award-list{
+  width:100%;
+  margin-top:63px;
+  margin-bottom:45px;
+
+}
+.award-list-name{
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 100rpx;
+  height: 100rpx;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.name-text{
+  line-height: 92rpx;
+  text-align: left;
+  float: left;
+  height: 100%;
+  width: 17%;
+}
+.name-input{
+  box-shadow: 0px 0px 3px rgba(55,55,55,0.5);
+  border-radius: 10rpx;
+  border: 1px #fc3 solid;
+  float: right;
+  height: 90%;
+  line-height: 90%;
+  width: 81%;
+}
+.text-one,.text-tow{
+  color:red;
+  font-size: 12px;
+  width:88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-one{
+  margin-top: 20px;
+}
+.text-tow{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.award-btn{
+height:43px;
+line-height:43px;
+text-align:center;
+margin-top:30px;
+width:80%;
+margin-left:auto;
+margin-right:auto;
+border-radius:5px;
+background:#fc3;
+}

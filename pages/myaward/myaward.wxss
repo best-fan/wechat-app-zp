@@ -1,0 +1,80 @@
+/* pages/myaward/myaward.wxss */
+/* pages/myjoin/myjoin.wxss */
+.username{
+  height:240rpx;
+  line-height: 240rpx;
+  text-align: center;
+  color: #888;
+}
+/********招聘公司列表*********/ 
+.list-all{
+width:100%;
+height:54rpx;
+box-shadow:0px 0px 3px rgba(55,55,55,0.5);
+margin-bottom:20px;
+
+
+}
+.detail-list{
+  margin-top: 10px;
+  width:100%;
+  height:100%;
+}
+
+.list-image{
+  margin-left: 8px;
+  width:20%;
+  height:77%;
+  margin-top: 2.7%;
+}
+.list-image image{
+  border: 1px solid #13227a;
+  width:100%;
+  height:100%;
+}
+.list-text{
+  height:100%;
+ width:100%;
+
+}
+.list-text-other{
+  height:100%;
+width:100%;
+text-align:center;
+margin-top:102px;
+color:#919191;
+
+
+}
+.list-text text{
+
+font-size:17px;
+
+
+}
+.list-text-name{
+  margin-left:14px;
+  color:black;
+}
+.list-text-entnum{
+text-align:right;
+color:#888;
+}
+.list-text-detpay{
+  text-align:right;
+  color:red;
+  font-weight:600;
+  width: 100%;
+}
+.list-text-adder{
+  text-align:right;
+  color:#888;
+}
+
+.content{
+  height: 100%;
+  width: 100%;
+  margin-bottom: 10rpx;
+}
+
+
