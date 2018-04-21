@@ -1,6 +1,9 @@
 # 基于Bmob的微信小程序 招聘类
 小程序主要实现招聘信息页的展示、用户报名、推荐管理、个人中心等功能是一个比较完善的系统
-##  项目截图
+### 目录结构：
+* images  图片资源
+* pages  页面文件夹
+##  项目截图：
 ### 主界面
 ![主界面](https://github.com/best-fan/wechat-app-zp/blob/master/screen/1.png)
 ### 全部职位
