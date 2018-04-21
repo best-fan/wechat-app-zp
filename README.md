@@ -4,6 +4,18 @@
 * images  图片资源
 * pages  页面文件夹
 *  award   推荐奖励
+*  detail  职位详情
+*  index   主页
+*  map    地图导航
+*  myaward    推荐奖励
+*  myjoin    我的加入
+*  personal   个人中心
+*  register    注册
+*  search    查找
+*  searchinfor    查找结果
+*  servicephone    拨号
+*  setinfor    修改信息
+*  today    今日招聘
 ##  项目截图：
 ### 主界面
 ![主界面](https://github.com/best-fan/wechat-app-zp/blob/master/screen/1.png)
