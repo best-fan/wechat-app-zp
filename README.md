@@ -37,3 +37,8 @@
 ![报名](https://github.com/best-fan/wechat-app-zp/blob/master/screen/9.png)
 ### 我的报名
 ![我的报名](https://github.com/best-fan/wechat-app-zp/blob/master/screen/10.png)
+### 使用说明：
+在Bmob上申请账号并创建项目
+[Bmob官网](https://www.bmob.cn/)  
+并创建表
+* 打开app.js文件 将应用秘钥：Application ID、REST API Key填写
